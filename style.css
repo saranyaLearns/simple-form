@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    height: 250px;
+    width: 290px;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+img{
+    height: 40px;
+    width: 40px;
+    background-size: contain;
+}
+.header{
+    display: flex;
+    gap: 20px;
+    padding: 5px;
+    color: maroon;
+    font-weight: bold;
+    font-size: 8px;
+}
+.header .hindi{
+    font-size: 16px;
+    font-weight: bold;
+}
+.content{
+    display: flex;
+}
+.content .left{
+    padding: 10px;
+}
+.content .left h4,p{
+    padding: 2px 0px;
+}
+.heading{
+    color: blue;
+    font-size: 12px;
+}
+.content .right{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    justify-content: center;
+    margin-left: 50px;
+    margin-top: -60px;
+   
+}
+.content .right .ecode{
+    height: 60px;
+    width: 60px;
+    background: linear-gradient(to left, rgb(228, 109, 12), rgb(233, 129, 91));
+    border-radius: 10px;
+}
+.content .right .ecode img{
+    margin: 5px 5px;
+}
+.content .right img{
+    height: 50px;
+    width: 50px;
+    background-size: contain;
+    margin-bottom: 30px;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+#btnSubmit{
+    height: 40px;
+    width: 280px;
+    background-color: rgb(206, 224, 224);
+    border: 1px solid black;
+}
+#signature{
+    margin-top: -12px;
+}
+.submit{
+    margin-top: 20px;
+}
+#rendered-image{
+    position: fixed;
+}
+#img-upload{
+    font-size: 5px;
+}
+#txtName,#txtFname,#txtDate{
+    width: 100px;
+}
+button{
+    margin-left: 120px;
+    outline: none;
+}
+button{
+    height: 30px;
+    width: 50px;
+    margin-left: 90px;
+}

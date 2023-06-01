@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="left">
+                <p class="hindi">आयकर विभाग</p>
+                <p>INCOME TAX DEPARTMENT</p>
+            </div>
+            <div class="center">
+                <img src="logo.png" alt="">
+            </div>
+            <div class="right">
+                <p class="hindi">भारत सरकार</p>
+                <p>GOVT OF INDIA</p>
+            </div>
+        </div>      
+        <div class="content">         
+                    <div class="left">                   
+                    <form id="frm" method="get">
+                        <input type="text" id="txtName" placeholder="Holder Name" class="hide" onkeydown="return /[a-z]/i.test(event.key)">
+                        <p id="name"></p>
+                        <input type="text" id="txtFname" placeholder="Father Name" class="hide"  onkeydown="return /[a-z]/i.test(event.key)">
+                        <p id="fname"></p>
+                        <input type="date" id="txtDate" class="hide">
+                        <p id="date_pick"></p>
+                        <p class="heading">Permanent Account Number</p>
+                        <h4>BA0012001</h4>
+                        <h4 class="heading">Signature</h4>
+                        <p id="signature"></p>
+                        <br>    
+                        <button type="reset">Reset</button>             
+                    </form>
+                                       
+                    </div>
+                    <div class="right">
+                        <div class="ecode">
+                            <img src="logo.png" alt="">
+                        </div>
+                        <div class="profile">
+
+    <input type = 'file' onchange = 'renderFile()' id="img-upload" class="hide">
+    <br>
+    <img src = "" alt='Profile' id='rendered-image'  >
+
+                        </div>
+                    </div>
+        </div>
+        
+                           
+  <div class="submit">
+        <input type="submit" value="Submit" id="btnSubmit">
+       
+    </div>  
+
+    </div>
+    <script src="script.js"></script>
+    <script>
+        
+
+    const renderFile = () => {
+    const render = document.getElementById('rendered-image')
+    const file = document.querySelector('input[type=file]').files[0]
+    const reader = new FileReader();
+    
+    
+    reader.addEventListener('load' , ()=> {
+      render.src = reader.result;
+    }, false)
+  
+    if(file){
+      reader.readAsDataURL(file);
+    }
+  }
+
+    </script>
+</body>
+</html>
